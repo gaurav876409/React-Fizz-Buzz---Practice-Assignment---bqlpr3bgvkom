@@ -14,7 +14,7 @@ const App = () => {
   }
 
   const counterClass = () => {
-    if(counter%3 && counter%5 === 0){
+    if(counter%3 ===0 && counter%5 === 0){
       return 'fizzbuzz' 
     }else if(counter%3 === 0){
       return 'fizz'
@@ -29,10 +29,10 @@ const App = () => {
     <div id="main">
       <div id='counter' className={counterClass()}>{counter}</div>
       <div>
-        <button id='increment' onClick={increment}>Increment</button>
+        <button id='increment' onClick={increment}>increments</button>
       </div>
       <div>
-        <button id='decrement' onClick={decrement}>Decrement</button>
+        <button id='decrement' onClick={decrement}>decrements</button>
       </div>
     </div>
   )
